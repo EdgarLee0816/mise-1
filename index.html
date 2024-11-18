@@ -42,7 +42,7 @@
         async function fetchXML() {
             try {
                 // XML 데이터 URL (XML 데이터를 제공하는 경로)
-                const response = await fetch('https://apis.data.go.kr/6260000/BusanDustShelterService/getTblDustShelter?serviceKey=RbmUVXeJKad2Apwc%2BzsDbMuS1okmEQdYCM9%2FIf5TtZTrZQHnD85pazJV3BEM6LoVAA%2Fp%2Bg47yFDx0eTYnpg8cg%3D%3D&pageNo=1&numOfRows=10&resultType=xml'); // XML 파일 경로
+                const response = await fetch('https://apis.data.go.kr/6260000/BusanDustShelterService/getTblDustShelter?serviceKey=RbmUVXeJKad2Apwc%2BzsDbMuS1okmEQdYCM9%2FIf5TtZTrZQHnD85pazJV3BEM6LoVAA%2Fp%2Bg47yFDx0eTYnpg8cg%3D%3D&pageNo=1&numOfRows=30&resultType=xml'); // XML 파일 경로
                 const xmlText = await response.text();
                 const parser = new DOMParser();
                 const xmlDoc = parser.parseFromString(xmlText, "application/xml");
